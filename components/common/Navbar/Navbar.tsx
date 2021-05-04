@@ -5,6 +5,7 @@ import { Searchbar, UserNav } from '@components/common'
 import NavbarRoot from './NavbarRoot'
 import s from './Navbar.module.css'
 
+// Works
 const Navbar: FC = () => (
   <NavbarRoot>
     <Container>
