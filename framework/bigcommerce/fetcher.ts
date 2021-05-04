@@ -23,6 +23,7 @@ const fetcher: Fetcher = async ({
   variables,
   body: bodyObj,
 }) => {
+  console.log('calledd', url, method)
   const hasBody = Boolean(variables || bodyObj)
   const body = hasBody
     ? JSON.stringify(variables ? { variables } : bodyObj)

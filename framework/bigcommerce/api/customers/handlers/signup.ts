@@ -17,7 +17,6 @@ const signup: SignupHandlers['signup'] = async ({
   // TODO: validate the password and email
   // Passwords must be at least 7 characters and contain both alphabetic
   // and numeric characters.
-
   try {
     await config.storeApiFetch('/v3/customers', {
       method: 'POST',

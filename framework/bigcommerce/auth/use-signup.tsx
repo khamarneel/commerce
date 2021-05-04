@@ -24,6 +24,7 @@ export const handler: MutationHook<null, {}, SignupBody, SignupBody> = {
       })
     }
 
+    console.log('2', options)
     return fetch({
       ...options,
       body: { firstName, lastName, email, password },
@@ -34,6 +35,7 @@ export const handler: MutationHook<null, {}, SignupBody, SignupBody> = {
 
     return useCallback(
       async function signup(input) {
+        console.log('1')
         const data = await fetch({ input })
         await revalidate()
         return data

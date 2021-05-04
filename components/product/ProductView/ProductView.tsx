@@ -135,7 +135,14 @@ const ProductView: FC<Props> = ({ product }) => {
               </div>
             ))}
 
-            <div className="pb-14 break-words w-full max-w-xl">
+            <div
+              className="pb-14 break-words w-full max-w-xl"
+              style={{
+                fontFamily: 'arial',
+                textTransform: 'none',
+                fontSize: '18px',
+              }}
+            >
               <Text html={product.descriptionHtml || product.description} />
             </div>
           </section>
